@@ -1,6 +1,6 @@
-var stratum = require('../lib');
+var Client = require('stratum').Client;
 
-var client = stratum.Client.$create();
+client = Client.create();
 
  //must be specified per EventEmitter requirements
 client.on('error', function(socket, err){
